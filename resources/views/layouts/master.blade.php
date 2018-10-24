@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title></title>
-    @stack('head')
+    @stack('styles')
 </head>
-@stack('body')
+<body>
+    @stack('body')
+</body>
 </html>
