@@ -12,6 +12,9 @@
 */
 
 Route::get('/', 'AuthenticateController@login');
+Route::get('/games', 'GameController@index');
+Route::get('/games/{title}', 'GameController@show');
+Route::get('/user/{name}', 'UserController@index');
 
 
 

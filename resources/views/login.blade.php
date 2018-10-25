@@ -8,7 +8,7 @@
 @push('body')
     <div class="box">
         <h2>Login</h2>
-        <form>
+        <form method='GET' action=''>
             <div class="inputBox">
                 <input type="text" name="" required="">
                 <label>Username</label>
