@@ -2,6 +2,11 @@
 
 return [
 
+    'nav' => [
+        '/games' => 'Games',
+        '/newgame' => 'New Game',
+        '/users' => 'Users',
+    ],
     /*
     |--------------------------------------------------------------------------
     | Application Name

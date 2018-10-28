@@ -8,7 +8,12 @@ class UserController extends Controller
 {
     public function index($name = null)
     {
-        dump($name);
+        //dump($name);
         return view('users.user')->with(['name' => $name]);
+    }
+
+    public function showAll()
+    {
+        return view('users.showAll');
     }
 }

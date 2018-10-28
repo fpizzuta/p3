@@ -1,0 +1,198 @@
+/* box sizing: http://www.paulirish.com/2012/box-sizing-border-box-ftw */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
+    color: #111;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    /* sticky footer */
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+
+    margin: 0;
+    padding:0;
+    /* Default font-size */
+    font-size: 1.6rem;
+
+    /* sticky footer - match footer height */
+    margin-bottom: 60px;
+}
+
+section#main {
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#logo {
+    /* Actual width is 632; displaying at half-size for retina screens */
+    width: 316px;
+}
+
+footer {
+    text-align: center;
+    background-color: #eee;
+
+    /* sticky footer */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+/*----------------------------------------------------
+Nav bar
+-----------------------------------------------------*/
+nav {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:link {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #18bc9c; /* teel */
+}
+
+/*----------------------------------------------------
+Typography
+-----------------------------------------------------*/
+
+a.active:link, a.active:visited, a.active:active, a.active:hover {
+    color: #18bc9c;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.0rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2.0rem;
+}
+
+
+/*----------------------------------------------------
+Forms
+-----------------------------------------------------*/
+
+/*label, legend {*/
+    /*display: block;*/
+    /*margin-top: 20px;*/
+    /*margin-bottom: 0;*/
+    /*text-align: left;*/
+    /*font-size: 1.2rem;*/
+    /*letter-spacing: .75px;*/
+    /*font-weight: bold;*/
+    /*text-transform: uppercase;*/
+/*}*/
+
+/*input[type=text], input[type=email], input[type=password], textarea, select {*/
+    /*display: block;*/
+    /*width: 100%;*/
+    /*font-size: 1.5rem;*/
+    /*padding: 3px;*/
+    /*font-family: Consolas, Courier, monospace;*/
+/*}*/
+
+/*input[type='checkbox'], input[type='radio'] {*/
+    /*display: inline;*/
+/*}*/
+
+/*input[type='checkbox'] + label {*/
+    /*display: inline;*/
+    /*font-weight: normal;*/
+/*}*/
+
+/*.btn {*/
+    /*margin-top: 20px;*/
+    /*font-size: 1.5rem;*/
+/*}*/
+
+/*.error {*/
+    /*list-style-type: none;*/
+    /*color: #a94442; !* reddish *!*/
+    /*text-align: left;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*font-size: 12px;*/
+    /*font-style: italic;*/
+/*}*/
+
+/*.alert {*/
+    /*margin-top: 10px;*/
+/*}*/
+
+/*ul.alert {*/
+    /*list-style-type: none;*/
+/*}*/
+
+/*.success {*/
+    /*color: #3c763d; !* greenish *!*/
+/*}*/
+
+/*.details {*/
+    /*font-size: 1.1rem;*/
+    /*font-style: italic;*/
+/*}*/
+
+/*----------------------------------------------------
+Misc
+-----------------------------------------------------*/
+/* Clear Fix: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}

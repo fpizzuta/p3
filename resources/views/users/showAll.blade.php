@@ -6,5 +6,5 @@
 @endpush
 
 @push('body')
-    <h1>Show user {{ $name }}  here</h1>
+    <h1>Show all users here</h1>
 @endpush
