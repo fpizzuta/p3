@@ -1,3 +1,3 @@
 @if($errors->get($field))
-    <div class='error'>{{ $errors->first($field) }}</div>
+    <div class="alert alert-danger" role="alert">{{ $errors->first($field) }}</div>
 @endif

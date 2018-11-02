@@ -35,8 +35,11 @@
                         <input type="number" class='form-control' name="p1_Score" placeholder='Score' value="{{ old('p1_Score') }}">
                         @include('modules.field-error', ['field' => 'p1_Score'])
                     </div>
-                    <div class='checkbox'>
-                        <label> <input type="checkbox"  name="p1_Winner" value="{{ old('p1_Winner') }}">Winner</label>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"  name="p1_Winner" value="{{ old('p1_Winner') }}">
+                            Winner
+                        </label>
                     </div>
                 </fieldset>
             </div>
@@ -51,8 +54,11 @@
                         <input type="number" class='form-control' name="p2_Score" placeholder='Score' value="{{ old('p2_Score') }}">
                         @include('modules.field-error', ['field' => 'p2_Score'])
                     </div>
-                    <div class="checkbox">
-                        <label> <input type="checkbox"  name="p2_Winner" value="{{ old('p2_Winner') }}">Winner</label>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"  name="p2_Winner" value="{{ old('p2_Winner') }}">
+                            Winner
+                        </label>
                     </div>
                 </fieldset>
             </div>
@@ -67,8 +73,11 @@
                         <input type="number" class='form-control' name=p3_Score"" placeholder='Score' value="{{ old('p3_Score') }}">
                         @include('modules.field-error', ['field' => 'p3_Score'])
                     </div>
-                    <div class="checkbox">
-                        <label> <input type="checkbox"  name="p3_Winner" value="{{ old('p3_Winner') }}">Winner</label>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"  name="p3_Winner" value="{{ old('p3_Winner') }}">
+                            Winner
+                        </label>
                     </div>
                 </fieldset>
             </div>
@@ -83,8 +92,11 @@
                         <input type="number" class='form-control' name="p4_Score" placeholder='Score' value="{{ old('p4_Score') }}">
                         @include('modules.field-error', ['field' => 'p4_Score'])
                     </div>
-                    <div class="checkbox">
-                        <label> <input type="checkbox"  name="p4_Winner" value="{{ old('p4_Winner') }}">Winner</label>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                         <input class="form-check-input" type="checkbox"  name="p4_Winner" value="{{ old('p4_Winner') }}">
+                         Winner
+                         </label>
                     </div>
                 </fieldset>
             </div>

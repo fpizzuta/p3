@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-primary bg-dark">
     <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
-        <ul class="navbar-nav ml-auto text-center">
+        <ul class="navbar-nav ml-auto text-left">
             <li class="nav-item active">
-                <a class="nav-link" href="#">The Gathering</a>
+                <h3 style='color:#007bff'>The Gathering</h3>
             </li>
         </ul>
     </div>

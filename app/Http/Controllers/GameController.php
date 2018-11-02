@@ -11,14 +11,23 @@ class GameController extends Controller
 
     public function index()
     {
-        return view('games.showAll');
-
+        $json = file_get_contents(database_path('/games.json'));
+        $data = (json_decode($json,true) == null) ? array() : json_decode($json,true);
+//        dump($data);
+        return view('games.showAll')->with('data',$data);
     }
 
     public function show($title = null)
     {
-        //dump($title);
-        return view('games.show')->with(['title' => $title]);
+        dump($title);
+        $json = file_get_contents(database_path('/games.json'));
+        $data = (json_decode($json,true) == null) ? array() : json_decode($json,true);
+        foreach ($data as $game)
+        {
+            if ($game['id']==$title) {
+                return view('games.show')->with(['match' => $game]);
+            }
+        }
     }
 
     public function create()
@@ -44,9 +53,12 @@ class GameController extends Controller
         $json = file_get_contents(database_path('/games.json'));
         $data = (json_decode($json,true) == null) ? array() : json_decode($json,true);
         //$data += [$request->all()];
+        $request['id'] = random_int(1,1000000);
         array_push($data, $request->all());
-        dump($request->all());
-        dump($data);
+//        dump($request->all());
+//        dump($data);
         file_put_contents( database_path('/games.json'), json_encode($data));
+//        return redirect('games');
+        return view('games.show')->with(['match' => $request]);
     }
 }
