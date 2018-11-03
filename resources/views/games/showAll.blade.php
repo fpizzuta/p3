@@ -1,4 +1,4 @@
-@extends('layouts.pages');
+@extends('layouts.pages')
 
 @push('styles')
     {{-- Page specific CSS includes should be defined here; this .css file does not exist yet, but we can create it --}}
@@ -13,7 +13,7 @@
 @push('body')
     <div class="container">
         @foreach($data as $game)
-            <ul class="list-inline" style='text-align: center;'>
+            <ul class="list-inline" style='text-align: center'>
                 <div>
                     <li class="list-inline-item"><a class="social-icon text-center"
                                                     target="_self"

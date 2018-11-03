@@ -9,7 +9,7 @@
 <header>
     @include('modules.nav')
 </header>
-
+<body>
 @stack('body')
 </body>
 </html>
