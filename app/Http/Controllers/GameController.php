@@ -53,7 +53,7 @@ class GameController extends Controller
             'p4_Name' => 'nullable|alpha_num',
             'p4_score' => 'nullable|digits'
         ]);
-        $json = file_get_contents(database_path('/games.json'));
+        $json = file_get_contents(database_path('games.json'));
         $data = (json_decode($json,true) == null) ? array() : json_decode($json,true);
         //$data += [$request->all()];
         $request['id'] = random_int(1,1000000);
@@ -61,9 +61,9 @@ class GameController extends Controller
 //        dump($request->all());
 //        dump($data);
         try {
-            file_put_contents(database_path('/games.json'), json_encode($data));
+            file_put_contents(database_path('games.json'), json_encode($data));
         } catch (\Exception $e) {};
 //        return redirect('games');
-        return view('games.show');
+        return redirect("/games");
     }
 }
