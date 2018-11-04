@@ -13,7 +13,7 @@ http://jsfiddle.net/QSmJb/3/
 - Checkbox
 
 ## Packages
-*List the name of any packages you add to your project that do not come with Laravel by default; this should include, but is not limited to, barryvdh/laravel-debugbar*
+- barryvdh/laravel-debugbar
 
 ## Code style divergences
 *list any divergences from PSR-1/PSR-2 and course guidelines on code style*
