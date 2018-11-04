@@ -34,7 +34,10 @@ class GameController extends Controller
     {
         return view('games.create');
     }
-
+    public function create2()
+    {
+        return view('games.create2');
+    }
     public function store(Request $request)
     {
 

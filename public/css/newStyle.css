@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body,
+html {
+    height: 100%;
+}
+.flexbox {
+    display: -webkit-flex;
+    display: -ms-flexbox, display: flex;
+    overflow: hidden;
+    height: 100%;
+}
+.flexbox .flexbox-col {
+    height: 100%;
+    /*flex: 1;*/
+}
+#sidebar {
+    background: #EDEBD4;
+    width:30%;
+}
+#page-content {
+    background: #A13D0B;
+    /*background: #EDEBD4;*/
+    width:100%;
+}
+
+.navmenu {
+    margin: auto 0;
+    background-color: grey;
+    /*justify-content: space-between;*/
+}
+.navlink {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height:100%;
+    /*justify-content: center;*/
+    /*margin: auto; */
+    font-size: 1.5em;
+    padding-top: 42px;
+    align-items: center;
+    /*width:30%;*/
+}
+.navlink a{
+    /*padding:15px;*/
+    text-decoration: none;
+    color:#A13D0B;
+    width:100%;
+}
+
+.link {
+    align-items: center;
+}
+
+#logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.name {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    color:#A13D0B;
+}
+
+form {
+    margin-top: 50px;
+    margin-left: 10px;
+    background:#A13D0B;
+    /*background-color: #EDEBD4;*/
+    width:30%;
+    padding: 10px;
+    color: #EDEBD4;
+    font-size: 1.5em;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.form-group {
+    margin-bottom:10px;
+}
+
+.form-group > input {
+    margin:5px 0px 5px 10px;
+}
+
+.form-check-input {
+    width:10%;
+}
+
+fieldset {
+    margin-bottom: 5px;
+}
+
+input {
+    width: 90%
+
+}
+
+#button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    width:50%;
+}
+
+/*Centering legend found here http://jsfiddle.net/QSmJb/3/*/
+.Fieldset
+{
+    border: 1px solid #EDEBD4;
+    border-radius: 5px;
+    padding: 10px;
+}
+.legend {
+    border: medium none;
+    margin-left: 40%;
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+    width: auto;
+    color: #EDEBD4;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-check-label {
+    font-size:.7em;
+}
+
+.labels {
+    font-size: 1em;
+}
+
+.list-container {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item {
+    text-transform: capitalize;
+    color: #EDEBD4;
+    font-size: 1.3em;
+    text-align: left;
+    padding: 10px;
+    margin: 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+a:link {
+    color: #EDEBD4;
+}
