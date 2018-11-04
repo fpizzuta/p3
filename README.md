@@ -19,4 +19,4 @@ Checkbox
 *list any divergences from PSR-1/PSR-2 and course guidelines on code style*
 
 ## Notes for instructor
-*Any notes for me to refer to while grading; if none, omit this section*
+*The login screen takes anything. Hoping to get it working in p4.*
