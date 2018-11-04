@@ -5,24 +5,34 @@
 body,
 html {
     height: 100%;
+    background: #A13D0B;
 }
 .flexbox {
     display: -webkit-flex;
     display: -ms-flexbox, display: flex;
-    overflow: hidden;
+    overflow: scroll;
     height: 100%;
 }
 .flexbox .flexbox-col {
     height: 100%;
     /*flex: 1;*/
 }
+
+
+
 #sidebar {
     background: #EDEBD4;
     width:30%;
 }
 #page-content {
     background: #A13D0B;
-    /*background: #EDEBD4;*/
+    width:100%;
+    padding-left:10px;
+    padding-top:20px;
+
+}
+
+.wrapper {
     width:100%;
 }
 
@@ -67,12 +77,12 @@ html {
 }
 
 form {
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     margin-left: 10px;
     background:#A13D0B;
     /*background-color: #EDEBD4;*/
     width:30%;
-    padding: 10px;
+    /*padding: 10px;*/
     color: #EDEBD4;
     font-size: 1.5em;
 }
@@ -163,6 +173,47 @@ input {
     justify-content: flex-start;
 }
 
+.check-item {
+    text-transform: capitalize;
+    color: #EDEBD4;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 10px;
+    margin: 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.list-header {
+    text-transform: capitalize;
+    color: #EDEBD4;
+    font-size: 1.3em;
+    padding: 10px;
+    margin: 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: solid;
+    border-color: #EDEBD4;
+}
+
+#gameDate {
+    padding-left:40px;
+    font-size: 1.3em;
+}
+
+#gameName {
+    font-size: 1.3em;
+}
+
 a:link {
     color: #EDEBD4;
+    text-decoration: none;
 }
+
+.active {
+    font-size: 1.3em;
+}
+

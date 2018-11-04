@@ -7,7 +7,7 @@
 @endpush
 
 @push('body')
-
+<div class='wrapper'>
     <div id="page-content" class="page-content flexbox-col">
         <form method='POST' action='/games'>
             @csrf
@@ -67,7 +67,7 @@
                         @include('modules.field-error', ['field' => 'p3_Name'])
                     </div>
                     <div class="form-group">
-                        <input type="number" class='form-control' name=p3_Score"" placeholder='Score' value="{{ old('p3_Score') }}"/>
+                        <input type="number" class='form-control' name='p3_Score' placeholder='Score' value="{{ old('p3_Score') }}"/>
                         @include('modules.field-error', ['field' => 'p3_Score'])
                     </div>
                     <div class="form-group">
@@ -98,7 +98,7 @@
                 </fieldset>
             </div>
             <div id='button'>
-                <input class="btn" type="submit" value="Create">
+                <input class="btn" type="submit" value="Create"/>
             </div>
         </form>
     </div>

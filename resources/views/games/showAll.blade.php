@@ -9,9 +9,11 @@
 @endpush
 
 @push('body')
+<div class='wrapper'>
     <div id="page-content" class="page-content flexbox-col">
         <div class='list-container'>
             <div class='list'>
+                <div class="list-header">Title</div>
                 @foreach($data as $game)
                      <div class="list-item"><a target="_self" href="games/{{$game['id']}}">{{$game['gameName']}}</a></div>
                 @endforeach
@@ -19,10 +21,12 @@
         </div>
         <div class='list-container'>
             <div class='list'>
+                <div class="list-header">Date</div>
                 @foreach($data as $game)
                     <div class="list-item">{{$game['date']}}</div>
                 @endforeach
             </div>
         </div>
     </div>
+</div>
 @endpush

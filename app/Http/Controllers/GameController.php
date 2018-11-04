@@ -64,6 +64,6 @@ class GameController extends Controller
             file_put_contents(database_path('/games.json'), json_encode($data));
         } catch (\Exception $e) {};
 //        return redirect('games');
-        return view('games.show')->with(['match' => $request]);
+        return view('games.show');
     }
 }

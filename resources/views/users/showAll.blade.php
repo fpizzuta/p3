@@ -1,24 +1,25 @@
-@extends('layouts.pages')
+@extends('layouts.pages2')
 
 @push('styles')
     {{-- Page specific CSS includes should be defined here; this .css file does not exist yet, but we can create it --}}
     {{--<link href='{{ asset('css/page.css') }}' rel='stylesheet'>--}}
     {{--<link href='{{ asset('css/form.css') }}' rel='stylesheet'>--}}
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          crossorigin="anonymous">
+    <link href='{{ asset('css/newStyle.css') }}' rel='stylesheet'>
 
 @endpush
 
 @push('body')
-    <div class='container'>
-        <ul class="list-inline" style='text-align: center;'>
-            <div>
+<div class='wrapper'>
+    <div id="page-content" class="page-content flexbox-col">
+        <div class='list-container'>
+            <div class='list'>
+                <div class="list-header">All Users</div>
                 @foreach($data as $user)
-                    <li class="list-item">{{$user}}</li>
+                    <div class="check-item">{{ $user }}</div>
                 @endforeach
             </div>
-        </ul>
+        </div>
     </div>
+</div>
 @endpush
 
