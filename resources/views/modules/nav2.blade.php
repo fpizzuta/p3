@@ -6,9 +6,9 @@
             @foreach(config('app.nav') as $link => $label)
                 <div class="link">
                     @if(Request::is(substr($link, 1)))
-                        <a class="active" href="{{ $link }}">{{ $label }}</a>
+                        <a class="menu-link active" href="{{ $link }}">{{ $label }}</a>
                     @else
-                        <a href="{{ $link }}">{{ $label }}</a>
+                        <a class='menu-link' href="{{ $link }}">{{ $label }}</a>
                     @endif
                 </div>
             @endforeach
