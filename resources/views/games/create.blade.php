@@ -12,12 +12,12 @@
         <form method='POST' action='/games'>
             @csrf
             <div class="form-group">
-                <label class='labels' for='gameName'>Game Name</label>
+                <label class='labels' for='gameName'>Game Name *</label>
                 <input type="text" class='form-control' name="gameName" placeholder="Game" value="{{ old('gameName') }}">
                 @include('modules.field-error', ['field' => 'gameName'])
             </div>
             <div class="form-group">
-                <label class='labels' for='date'>Date</label>
+                <label class='labels' for='date'>Date *</label>
                 <input type="date" class='form-control' name="date" value="{{ old('date') }}">
                 @include('modules.field-error', ['field' => 'date'])
             </div>
@@ -25,7 +25,7 @@
                 <fieldset class='Fieldset'>
                     <legend class='legend'>Player 1</legend>
                     <div class="form-group">
-                        <input type="text" class='form-control' name="p1_Name" placeholder='Player 1 Name' value="{{ old('p1_Name') }}"/>
+                        <input type="text" class='form-control' name="p1_Name" placeholder='Player 1 Name *' value="{{ old('p1_Name') }}"/>
                         @include('modules.field-error', ['field' => 'p1_Name'])
                     </div>
                     <div class="form-group">
@@ -98,7 +98,7 @@
                 </fieldset>
             </div>
             <div id='button'>
-                <input class="btn" type="submit" value="Create"/>
+                <input id="btn" type="submit" value="Create"/>
             </div>
         </form>
     </div>

@@ -9,8 +9,9 @@ html {
 }
 .flexbox {
     display: -webkit-flex;
-    display: -ms-flexbox, display: flex;
-    overflow: scroll;
+    display: -ms-flexbox;
+    display: flex;
+    /*overflow: scroll;*/
     height: 100%;
 }
 .flexbox .flexbox-col {
@@ -23,17 +24,18 @@ html {
 #sidebar {
     background: #EDEBD4;
     width:30%;
+    height:100%;
 }
 #page-content {
     background: #A13D0B;
     width:100%;
     padding-left:10px;
     padding-top:20px;
-
 }
 
 .wrapper {
     width:100%;
+    height:100%;
 }
 
 .navmenu {
@@ -79,10 +81,9 @@ html {
 form {
     /*margin-top: 50px;*/
     margin-left: 10px;
-    background:#A13D0B;
-    /*background-color: #EDEBD4;*/
+    /*background:#A13D0B;*/
+
     width:30%;
-    /*padding: 10px;*/
     color: #EDEBD4;
     font-size: 1.5em;
 }
@@ -103,12 +104,33 @@ body {
     width:10%;
 }
 
+.form-control {
+    width:90%;
+}
 fieldset {
     margin-bottom: 5px;
+    width: 100%
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: .5; /* Firefox */
 }
 
 input {
-    width: 90%
+    /*width: 90%;*/
+    width: 100%;
+    padding: 10px;
+    padding-left:0px;
+    padding-right:0px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
 
 }
 
@@ -118,8 +140,10 @@ input {
     justify-content: center;
 }
 
-.btn {
+#btn {
     width:50%;
+    border: solid;
+    cursor:pointer;
 }
 
 /*Centering legend found here http://jsfiddle.net/QSmJb/3/*/
@@ -221,3 +245,8 @@ a:link {
     font-size: 1.3em;
 }
 
+.error {
+    color:red;
+    font-size: .5em;
+    background-color:  #EDEBD4;
+}
