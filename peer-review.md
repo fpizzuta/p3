@@ -31,7 +31,7 @@ No extraneous code found in the controller. Good job.
 ## 4. Code: Views
 
 + Template inheritance is used.
-+ Are there any separation of concern issues (i.e. non-display specific logic in view files)?
++ Code separation best practices were followed.
 + The drop down list could have used a module and populated the list items from app.config. This would have streamlined the code a bit and allowed for easier additions of sizes at a later date.
 + Blade syntax looked good. I did not see anything not covered in lectures. 
 
