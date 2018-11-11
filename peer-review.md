@@ -21,7 +21,7 @@ I tried the following:
 + I tried entering a number in the dogs name and it will only accept characters. 
 + Entering different paths on the URL all delivered 404 messages.
 
-The page passed all but one test. You should look back through the notes and implement the carry over of any field in fields.
+The page passed all but one test. You should look back through the notes and implement the carry over of any field that has data on submission.
 
 
 ## 3. Code: Routes
